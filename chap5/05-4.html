@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="memo">메모</label>
+  <textarea name="" id="memo" cols="40" rows="4"></textarea>
+
+  <label for="prod1">상품선택</label>
+  <select name="" id="prod1">
+    <option value="special_1">선물용3</option>
+    <option value="special_2">선물용5</option>
+    <option value="family_1">가정용3</option>
+    <option value="family_2">가정용5</option>
+  </select>
+
+  <label for="prod2">포장 여부</label>
+  <input type="text" id="prod2" list="pack">
+  <datalist id="pack">
+    <option value="package">선물 포장</option>
+    <option value="package">선물 안 함</option>
+  </datalist>
+
+  <button type="submit">주문하기</button>
+  <button type="reset">취소하기</button>
+  
+</body>
+</html>
