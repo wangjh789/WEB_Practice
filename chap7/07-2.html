@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+    }
+    h1{
+      color: rgb(0, 0, 225,0.5);
+    }
+    @font-face {
+      font-family: 'Ostich';
+      src: url('fonts/ostrich-sans-bold.woff') format('woff'),
+    }
+    .wfont{
+      font-family: 'Ostich', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    p{
+      font-size: 30px;
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 2.0;
+    }
+    .center{
+      text-align: center;
+    }
+    .justify{
+      text-align: justify;
+    }
+    .heading {
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .shadow1{
+      color: red;
+      text-shadow: 1px 1px black;
+    }
+    .shadow2{
+      text-shadow: 5px 5px 3px #ffa500;
+    }
+    .shadow3{
+      color: #fff;
+      text-shadow: 7px -7px 20px #000;
+    }
+    .trans1{
+      text-transform: capitalize;
+    }
+    .trans2{
+      text-transform: uppercase;
+    }
+    .trans3{
+      text-transform: lowercase;
+    }
+    .spacing1{
+      letter-spacing: 0.2em;
+    }
+    .spacing2{
+      letter-spacing: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="heading">레드향</h1>
+  <p class="center">Using Default Fonts (center)-----------------------------</p>
+  <p class="wfont justify">Using Web Fonts (justify)---------------------------------------</p>
+  <p class="wfont">Using Web Fonts (normal)---------------------------------------</p>
+  <br>
+  <p style="text-decoration: none;">none</p>
+  <p style="text-decoration: underline;">underline</p>
+  <p style="text-decoration: overline;">overline</p>
+  <p style="text-decoration: line-through;">line through</p>
+  
+
+  <h2 class="shadow1">HTML</h2>
+  <h2 class="shadow2">CSS</h2>
+  <h2 class="shadow3">Javascript</h2>
+
+  <h3 class="trans1">html</h3>
+  <h3 class="trans2">css</h3>
+  <h3 class="trans3">JACASCRIPT</h3>
+
+  <p>CSS</p>
+  <p class="spacing1">CSS</p>
+  <p class="spacing2">CSS</p>
+</body>
+</html>
