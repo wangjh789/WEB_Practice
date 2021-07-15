@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+			width:300px;
+			height:100px;
+		}
+		.grad1{
+			background:red;
+			background:radial-gradient(white, yellow, red);
+		}
+		.grad2{
+			background:red;
+			background:radial-gradient(circle, white, yellow, red); 
+		}
+
+    .grad2-1{
+			background:skyblue;  
+			background:radial-gradient(yellow, white, orange); 
+		}
+		.grad2-2{
+			background:skyblue; 
+			background:radial-gradient(yellow, white 10%, orange 60%);  
+		}
+
+    .grad3-1 {
+			background: red; 
+			background: repeating-linear-gradient(yellow, red 20px); 
+		}
+		.grad3-2 {
+			background: #ccc; 
+			background: repeating-radial-gradient(circle, white, #ccc 10%); 
+		}
+
+  </style>
+</head>
+<body>
+  <div class="grad1"></div>
+  <div class="grad2"></div>
+  <div class="grad2-1"></div>
+  <div class="grad2-2"></div>
+  <div class="grad3-1"></div>
+  <div class="grad3-2"></div>
+  
+</body>
+</html>
