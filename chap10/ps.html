@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #ex1 #intro:target{
+      background-color: #0069e0;
+      color: #fff;
+    }
+    #ex2 li{
+      list-style: none;
+      padding: 10px;
+    }
+    #ex2 input:checked + label{
+      color:red;
+      font-weight: bold;
+    }
+    #ex2  label[for=name], label[for=tel]{
+      width: 50px;
+      float: left;
+    }
+
+    #ex2 input:not([type=radio]){
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 5px;
+      width: 200px;
+    }
+    #ex3 .contents :nth-child(3){
+      background-color: black;
+    }
+    #ex3 .contents p:nth-of-type(3){
+      background-color: red;
+    }
+
+    #ex4 li.new::after{
+      content: 'NEW!';
+      font-size: x-small;
+      padding: 2px 4px;
+      margin: 0 10px;
+      border-radius: 2px;
+      background: #f00;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="ex1">
+    <nav class="navi">
+      <ul>
+        <li><a href="#intro">이용안내</a></li>
+        <li><a href="#room">객실 소개</a></li>
+        <li><a href="#reservation">예약 방법 및 요금</a></li>
+        <li><a href="ps-2.html">에앾하기</a></li>
+      </ul>
+    </nav>
+    <div id="intro" class="contents">
+      <h2>이용안내</h2>
+    </div>
+    <div class="contents" id="room">
+      <h2>객실 소개</h2>
+    </div>
+    <div class="contents" id="reservation">
+      <h2>예약 방법 및 요금</h2>
+    </div>
+  </div>
+
+  <div id="ex2">
+    <fieldset>
+      <legend>개인 정보</legend>
+      <ul>
+        <li><label for="name">이름</label><input type="text" id="name" name="name"></li>
+        <li><label for="tel">연락처</label><input type="tel" id="tel" name="tel"></li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>객실형태</legend>
+      <ul>
+        <li><input type="radio" id="basic" name="room"><label for="basic">기본형</label></li>
+        <li><input type="radio" id="family" name="room"><label for="family">가족형</label></li>
+      </ul>
+    </fieldset>
+  </div>
+
+  <div id="ex3">
+    <div class="contents">
+      <h2>이용 안내</h2>
+      <p>asdfasdfasdfasdfasdfasdf</p>
+      <p>asdfasdfasdfasdfasdfasdf</p>
+      <h2>객실 소개</h2>
+      <p>asdfasdfasdfasdfasdfasdfasdf</p>
+      <h2>예약 방법 및 요금</h2>
+      <p>asdfasdfasdfasdfasdfasdfasdfasdf</p>
+    </div>
+  </div>
+
+  <div id="ex4">
+    <div class="container">
+      <h1>제품 목록</h1>
+      <ul>
+        <li class="new">제품1</li>
+        <li>제품2</li>
+        <li>제품3</li>
+        <li class="new">제품4</li>
+      </ul>
+    </div>
+  </div>
+  
+  
+</body>
+</html>

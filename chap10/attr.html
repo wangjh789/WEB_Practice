@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #ex1  li{
+      display: inline;
+      margin: 10px;
+    }
+    #ex1 li a {
+      padding: 10px;
+      text-decoration: none;
+    }
+    #ex1  a[href]{
+      background: yellow;
+      border: 1px solid #ccc;
+      font-weight: normal;
+    }
+
+    #ex2 li{
+      list-style: none;
+    
+    }
+    #ex2 a[target='_blank']{
+      padding-right: 30px;
+      background: url(images/newwindow.png) no-repeat center right;
+    }
+    #ex3 li{
+      list-style: none;
+      display: inline-block;
+    }
+    #ex3 [class ~='button']{
+      box-shadow: rgba(0,0,0,0.4) 4px 4px;
+      border-radius: 5px;
+    }
+
+    #ex4 li{
+      list-style: none;
+      display: inline-block;
+      margin: 10px 5px;
+    }
+    #ex4 a[title |=us]{
+      background: url(images/us.png) no-repeat left center;
+      padding-left: 20px;
+    }
+    #ex4 a[title |=jap]{
+      background: url(images/jp.png) no-repeat left center;
+      padding-left: 20px;
+    }
+    #ex4 a[title |=chn]{
+      background: url(images/ch.png) no-repeat left center;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="ex1">
+    <ul>
+      <li><a>메인메뉴: </a></li>
+      <li><a href="">메뉴1</a></li>
+      <li><a href="">메뉴2</a></li>
+      <li><a href="">메뉴3</a></li>
+      <li><a href="">메뉴4</a></li>
+    </ul>
+  </div>
+
+  <div id="ex2">
+    <ul>
+      <li><a href="" target="_blank">HTML</a></li>
+      <li><a href="">CSS Selector Level 3</a></li>
+      <li><a href="">미디어쿼리</a></li>
+    </ul>
+  </div>
+
+  <div id="ex3">
+    <ul>
+      <li><a href="" class="flat">메뉴1</a></li>
+      <li><a href="" class="flat">메뉴2</a></li>
+      <li><a href="" class="button">메뉴3</a></li>
+      <li><a href="" class="flat button">메뉴4</a></li>
+    </ul>
+  </div>
+
+  <div id="ex4">
+    <ul>
+      <li>외국어 서비스</li>
+      <li><a href="" title="us-english">영어</a></li>
+      <li><a href="" title="ja">일본어</a></li>
+      <li><a href="" title="chn">중국어</a></li>
+    </ul>
+  </div>
+  
+</body>
+</html>
