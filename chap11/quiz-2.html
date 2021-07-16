@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 1px 1px 10px 1px black;
+      animation: rotate 3s infinite;
+    }
+
+    @keyframes rotate{
+      from {
+        transform: rotateY(0deg);
+      }
+      50%{
+        transform: rotateY(180deg);
+      }
+      to{
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="./images/bear.jpg" alt="">
+  </div>
+  
+</body>
+</html>
