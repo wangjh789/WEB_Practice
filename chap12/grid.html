@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #wrapper1{
+      display: grid;
+      /* width: 600px; */
+      /* grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 100px; */
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      grid-gap: 10px 20px;
+      /* grid-template-rows: minmax(100px,auto) */
+    }
+    #wrapper2{
+      display: grid;
+      /* width: 600px; */
+      /* grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 100px; */
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      /* grid-template-rows: minmax(100px,auto) */
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrapper1">
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+    <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem, ipsum dolor.</div>
+  </div>
+  <div id="wrapper2">
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+    <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem, ipsum dolor.</div>
+  </div>
+  
+</body>
+</html>
