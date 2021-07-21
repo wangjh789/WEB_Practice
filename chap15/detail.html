@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const showDetail = ()=>{
+      document.querySelector('#decs').style.display="block";
+      document.querySelector('#open').style.display="none";
+    }
+    const hideDetail = ()=>{
+      document.querySelector('#decs').style.display="none";
+      document.querySelector('#open').style.display="block";
+    }
+  </script>
+  <div id="box" style="width: 20px; height: 20px; background-color: black;"></div>
+  <button class="over" id="open" onclick="showDetail()">열기</button>
+  <div id="decs" class="detail" style="display: none;">
+  <h4>등심붓꽃</h4>
+  <p>asdflkjasdlfk;jasdlk;fjasdl;kfjasldkfjasl;dfj</p>
+</div>
+  <button  id="close" onclick="hideDetail()">닫기</button>
+  
+</body>
+</html>

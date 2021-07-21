@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function changeColor(color){
+      const result = document.querySelector('#result');
+      result.style.backgroundColor = color;
+    }
+  </script>
+  <ul>
+    <li><a href="" onclick="alert(`버튼을 클릭`)">Green</a></li>
+    <li><a href="" onclick="alert(`버튼을 클릭`)">Orange</a></li>
+    <li><a href=""onclick="alert(`버튼을 클릭`)">Purple</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#" onclick="changeColor(`green`)">Green</a></li>
+    <li><a href="#" onclick="changeColor(`orange`)">Orange</a></li>
+    <li><a href="#"onclick="changeColor(`purple`)">Purple</a></li>
+    <div id="result" style="width: 20px; height: 20px; background-color: black;"></div>
+  </ul>
+
+  <button id="change">글자색바꾸기</button>
+  <p>asdfl;kjasd;lfkjasl;dkfjasl;dkfjal;sd</p>
+
+  <script>
+    var changeBtn = document.querySelector('#change')
+    changeBtn.onclick = changeColor;
+
+    function changeColor(){
+      document.querySelector('p').style.color = 'yellow'
+    }
+  </script>
+  
+</body>
+</html>
