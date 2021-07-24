@@ -9,12 +9,16 @@
 <body>
   <h1>현재 시각 : <br><span id="current"></span></h1>
   <script>
-    setInterval(getTime,1000);
+    setInterval(()=>getTime(),1000);
 
-    function getTime(){
-      const now = new Date()
+    const getTime = ()=>{
+        const now = new Date()
       document.querySelector('#current').innerHTML = now.toLocaleString()
     }
+    // function getTime(){
+    //   const now = new Date()
+    //   document.querySelector('#current').innerHTML = now.toLocaleString()
+    // }
     
   </script>
   
