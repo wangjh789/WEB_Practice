@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    document.write('<h1>배열 변환하는 pop</h1>')
+    var chars = ['a','b','c','d']
+
+    var popped1 = chars.pop()
+    document.write('꺼낸 요소 '+popped1+ " | 배열 "+chars)
+    document.write('<br/>')
+
+    document.write('<h1>배열 변환하는 shift</h1>')
+    var popped2 = chars.shift();
+    document.write('꺼낸 요소 '+popped2+ " | 배열 "+chars)
+    document.write('<br/>')
+
+    document.write('<br/>')
+
+    document.write('<h1>배열 변환하는 splice</h1>')
+    var numbers = [1,2,3,4,5];
+    var newNumbers = numbers.splice(2);
+    document.write(`반환된 배열 : ${newNumbers} <br>`)
+    document.write(`기존 배열 : ${numbers}`)
+    document.write('<br/>')
+
+    document.write('<br/>')
+
+    var numbers = [1,2,3,4,5];
+    var newNumbers = numbers.splice(2,1);
+    document.write(`반환된 배열 : ${newNumbers} <br>`)
+    document.write(`기존 배열 : ${numbers}`)
+    document.write('<br/>')
+
+    document.write('<br/>')
+
+    var numbers = [1,2,3,4,5];
+    var newNumbers = numbers.splice(2,1,'asdf');
+    document.write(`반환된 배열 : ${newNumbers} <br>`)
+    document.write(`기존 배열 : ${numbers}`)
+    document.write('<br/>')
+
+    document.write('<br/>')
+
+    document.write('<h1>배열 유지하는 slice</h1>')
+
+    var numbers = [1,2,3,4,5];
+    var newNumbers = numbers.slice(2,4);
+    document.write(`반환된 배열 : ${newNumbers} <br>`)
+    document.write(`기존 배열 : ${numbers}`)
+    document.write('<br/>')
+
+    document.write('<br/>')
+
+  </script>
+  
+</body>
+</html>

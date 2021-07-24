@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 onclick="setOption(400,200,'quiz-2_popup.html')">현재 시간 보기</h1>
+  <script>
+    const setOption = (w,h,subject)=>{
+      const top = (window.screen.height-h)/2
+      const left = (window.screen.width-w)/2
+      const opt = `width=${w}, height=${h}, top=${top}, left=${left}`
+
+      const newWin = window.open(subject,"popup",opt)
+    }
+  </script>
+  
+</body>
+</html>
