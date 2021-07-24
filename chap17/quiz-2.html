@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="column"> 행 <input type="text" id="row">열 <button onclick='createTable()'>작성</button>
+
+  <table>
+
+  </table>
+  
+  <script>
+    function createTable (){
+      var column = document.querySelector('#column').value;
+      var row = document.querySelector('#row').value
+      var table = document.querySelector('table')
+      
+      for(let i=0;i<column;i++){
+        var tr = document.createElement('tr');
+        for(let j=0;j<row;j++){
+          var td = document.createElement('td');
+          var txt = document.createTextNode(`${i},${j}`)
+          td.appendChild(txt);
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+      column.value = ""
+      row.value = ""
+    }
+  </script>
+</body>
+</html>
